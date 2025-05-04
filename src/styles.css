@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family:
+        Gothan Rounded,
+        sans-serif;
+    font-weight: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or "contain" if you want no cropping */
+    z-index: -1;
+    image-rendering: pixelated;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
+    height: 500px; /* example */
+    width: 350px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* adjust as needed */
+    width: 100px;
+    margin: 0 auto;
+}
+
+.weather-icon img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.location {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.weather-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 15%;
+}
+
+.weather-stats .weather-icon {
+    max-width: 50%;
+    max-height: 50%;
+    filter: brightness(0) invert(1);
+}
+
+.weather-label {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.stat,
+.stat2 {
+    display: flex;
+    gap: 0;
+    white-space: nowrap;
+    max-width: 40%;
+}
+
+.bigger-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    align-self: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
